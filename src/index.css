@@ -160,7 +160,7 @@ Stripe Styles
 
 .nav-logo {
   display: flex;
-  width: 25%;
+  width: 15vh;
 }
 .btn {
   font-size: 1rem;
@@ -173,7 +173,7 @@ Stripe Styles
   transition: var(--transition);
 }
 .btn:hover {
-  background: var(--clr-grey-5);
+  background: var(--clr-red-dark);
 }
 .nav-links {
   display: none;
