@@ -1,11 +1,23 @@
 import React from 'react';
-import computerImage from './images/your_business_hereSVG.svg';
+import computerImage from './images/phone.svg';
+import { useGlobalContext } from './context';
 
 const Hero = () => {
+  const { closeSubmenu } = useGlobalContext();
+
   return (
-    <>
-      <h2>hero component</h2>
-    </>
+    <section className='hero'>
+      <div className='hero-center'>
+        <article className='hero-info'>
+          <h1>Web Help for Small Businesses</h1>
+          <h4>Take Your Business to Where Your Customers Are</h4>
+          <button className='btn'>start now</button>
+        </article>
+        <article className='hero-images'>
+          <img src={computerImage} alt='Make Money' className='phone-img' />
+        </article>
+      </div>
+    </section>
   );
 };
 
